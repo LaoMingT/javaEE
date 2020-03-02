@@ -1,0 +1,62 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html,body,p,form,img,input {
+	margin: 0;
+	padding: 0;
+}
+
+select,input,img {
+	vertical-align: middle;
+}
+
+body {
+	font-size: 12px;
+	font-family: "微软雅黑", "宋体", "黑体", Georgia, "Times New Roman", Times,
+		serif;
+}
+
+* {
+	line-height: 1.4em;
+}
+
+.table001 {
+	width: 1000px;
+	background-color: #FFF;
+	border: 1px solid #7F9FFF;
+}
+
+.table001title {
+	background-color: #0080FF;
+}
+
+.table001title td {
+	width: 100px;
+	text-align: center;
+	height: 25px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.table001value_dark {
+	background-color: #E0E0E0;
+}
+
+.table001value_dark td {
+	text-align: center;
+	height: 20px;
+	color: #616161;
+}
+
+.table001value_light {
+	background-color: #F3F3F3;
+}
+
+.table001value_light td {
+	text-align: center;
+	height: 20px;
+	color: #616161;
+}
+
+.table002title {
+	background-color: #F3F3F3;
+}

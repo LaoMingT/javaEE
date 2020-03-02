@@ -1,0 +1,320 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html,body,p,form,img,input {
+	margin: 0;
+	padding: 0;
+}
+
+select,input,img {
+	vertical-align: middle;
+}
+
+body {
+	font-size: 14px;
+	font-family: "微软雅黑", "宋体", "黑体", Georgia, "Times New Roman", Times,
+		serif;
+}
+
+input {
+	font-size: 14px;
+	font-family: "微软雅黑", "宋体", "黑体", Georgia, "Times New Roman", Times,
+		serif;
+}
+
+* {
+	line-height: 1.4em;
+}
+
+.face {
+	width: 415px;
+	float: left;
+	border: 1px solid #7F9FFF;
+	background: white;
+}
+
+.label {
+	background-color: #BDD8F4;
+	display: block;
+	float: left;
+	height: 43px;
+	width: 390px;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7F9FFF;
+}
+
+.label li {
+	float: left;
+	display: block;
+	height: 33px;
+	width: 85px;
+	text-align: center;
+	line-height: 33px;
+	position: relative;
+	top: 9px;
+	left: 18px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #7F9FFF;
+	border-right-color: #7F9FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #7F9FFF;
+	background-color: #FFF;
+}
+
+.close {
+	float: left;
+	height: 43px;
+	width: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7F9FFF;
+	background-color: #BDD8F4;
+}
+
+.closebutton {
+	height: 11px;
+	width: 11px;
+	background: url(../../images/icons/close.gif) no-repeat;
+	position: relative;
+	top: 3px;
+	left: 7px;
+	border: 0;
+}
+
+.closebutton:hover {
+	background: url(../../images/icons/overclose.gif) no-repeat;
+}
+
+.expression {
+	width: 397px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-bottom: 8px;
+	padding-bottom: 5px;
+	clear: both;
+	word-wrap: break-word;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #A0A0A4;
+	background: white;
+}
+
+#tags {
+	margin: 0px;
+	padding: 0px;
+	width: 397px;
+	display: block;
+}
+
+#tags li {
+	list-style-type: none;
+	font-size: 12px;
+	float: left;
+	margin-top: 0px;
+	white-space: nowrap;
+	display: block;
+	height: 23px;
+}
+
+#tags li a {
+	display: block;
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 23px;
+	color: #7F9FFF;
+	text-decoration: none;
+}
+
+#tags li a:hover {
+	color: #FFF;
+	background-color: #7F9FFF;
+	text-decoration: underline;
+}
+
+#tags li.selectTag {
+	background-color: #7F9FFF;
+}
+
+#tags li.selectTag a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+#tagContent {
+	width: 397px;
+	float: left;
+	margin-left: 8px;
+	margin-bottom: 8px;
+	clear: both;
+	white-space: nowrap;
+	word-wrap: break-word;
+	background: white;
+}
+
+.tagContent {
+	width: 397px;
+	float: left;
+	clear: both;
+	white-space: nowrap;
+	word-wrap: break-word;
+	display: none;
+}
+
+#tagContent div.selectTag {
+	display: block
+}
+
+.normalout {
+	height: 148px;
+	width: 415px;
+	float: left;
+	border: 1px solid #7F9FFF;
+	background: white;
+}
+
+.normalin {
+	height: 96px;
+	width: 406px;
+	float: left;
+	margin-top: 3px;
+	margin-left: 3px;
+	background: white;
+}
+
+.inputtext {
+	border: 1px solid #A0A0A4;
+	height: 25px;
+	width: 180px;
+}
+
+.normalbutton {
+	width: 45px;
+}
+
+.normalcontent {
+	display: block;
+	float: left list-style-type:  none;
+	padding: 0px;
+	margin-left: 65px;
+	margin-top: 25px;
+}
+
+.normalcontent li {
+	display: block;
+	list-style-type: none;
+}
+
+.talkout {
+	width: 415px;
+	float: left;
+	border: 1px solid #7F9FFF;
+}
+
+.talkoutin {
+	width: 415px;
+	float: left;
+}
+
+.talkouttitle {
+	display: block;
+	float: left list-style-type:  none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.talkouttitle li {
+	width: 415px;
+	display: block;
+	list-style-type: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.talkbutton {
+	width: 85px;
+	margin-left: 150px;
+}
+
+.talkoutweibo {
+	display: block;
+	float: left list-style-type:  none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.talkoutweibo li {
+	width: 330px;
+	display: block;
+	list-style-type: none;
+	margin-bottom: 5px;
+	margin-left: 85px;
+}
+
+.hottitle {
+	color: #7F7FFF;
+}
+
+.talkoutok {
+	display: block;
+	float: left list-style-type:  none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.talkoutok li {
+	width: 415px;
+	display: block;
+	list-style-type: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.talkbuttonok {
+	width: 45px;
+	margin-left: 340px;
+}
+
+.ok {
+	height: 24px;
+	width: 200px;
+	border: 1px solid #808080;
+	background-color: #C8C8CA;
+	margin-top: 20px;
+	margin-left: 100px;
+}
+
+.oktext {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	color: #D40000;
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+.okclose {
+	float: right;
+	height: 24px;
+	width: 25px;
+}
+
+.okclosebutton {
+	height: 13px;
+	width: 13px;
+	background: url(../../images/icons/ok.gif) no-repeat;
+	position: relative;
+	top: 4px;
+	left: 7px;
+	border: 0;
+}

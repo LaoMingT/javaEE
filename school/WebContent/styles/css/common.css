@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+.input_1 {
+	font: 12px 宋体, Arial;
+	color: #333;
+	border: 1px solid #CCCCCC;
+}
+
+form {
+	margin: 0px;
+}
+
+a.link_1:link {
+	color: #0066cc;
+	TEXT-DECORATION: underline;
+	padding: 1px
+}
+
+a.link_1:visited {
+	color: #0066cc;
+	TEXT-DECORATION: underline;
+	padding: 1px
+}
+
+a.link_1:hover {
+	color: #fff;
+	TEXT-DECORATION: none;
+	background-color: #0066cc;
+	padding: 1px
+}
+
+a.link_1:active {
+	color: #ccc;
+	TEXT-DECORATION: none;
+	padding: 1px
+}
+
+a.link_2:link {
+	color: #0066cc;
+	TEXT-DECORATION: underline;
+	padding: 1px
+}
+
+a.link_2:visited {
+	color: #0066cc;
+	TEXT-DECORATION: underline;
+	padding: 1px
+}
+
+a.link_2:hover {
+	color: #fff;
+	TEXT-DECORATION: none;
+	background-color: #FF0000;
+	padding: 1px
+}
+
+a.link_2:active {
+	color: #ccc;
+	TEXT-DECORATION: none;
+	padding: 1px
+}
+
+dl dd {
+	margin-left: 10px;
+}
+
+dl dt {
+	font-weight: bold;
+	line-height: 20px;
+	height: 20px;
+}
+
+dl {
+	border: 0px solid black;
+	margin: 3px;
+	font: "宋体";
+}

@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+@import "header.css";
+
+.clearBoder {
+	border: 0
+}
+
+.form0 {
+	margin: 12px 12px;
+}
+
+.body0 {
+	margin: 12px;
+}
+
+a.a0 {
+	color: #038CC9;
+	text-decoration: underline;
+	padding: 0 0 2px 20px;
+	margin: 0 0 10px 0;
+	line-height: 22px;
+	background: url(../../images/icons/add0.png) no-repeat left top;
+}
+
+a.edit0 {
+	width: 12px;
+	height: 12px;
+	padding: 0 6px;
+	background: url(../../images/icons/edit0.gif) no-repeat left top;
+	margin: 0 5px 0 0;
+}
+
+a.mail {
+	width: 12px;
+	height: 12px;
+	padding: 0 6px;
+	background: url(../../images/icons/mail.gif) no-repeat left top;
+	margin: 0 5px 0 0;
+}
+
+a.del0 {
+	width: 12px;
+	height: 12px;
+	padding: 0 6px;
+	background: url(../../images/icons/del0.gif) no-repeat left top;
+	margin: 0 5px 0 0;
+}
+
+a.up0 {
+	width: 12px;
+	height: 12px;
+	padding: 0 6px;
+	background: url(../../images/icons/up0.gif) no-repeat left top;
+	margin: 0 5px 0 0;
+}
+
+a.down0 {
+	width: 12px;
+	height: 12px;
+	padding: 0 6px;
+	background: url(../../images/icons/down0.gif) no-repeat left top;
+	margin: 0 5px 0 0;
+}
+
+img.button0 {
+	cursor: pointer;
+	margin: 0 3px;
+}
+
+.div0 {
+	padding: 16px;
+}
+
+.tab0 {
+	background: #d9d9d9;
+	width: auto;
+}
+
+.tab0 td {
+	background: #fff;
+	font-size: 12px;
+	line-height: 25px;
+	padding: 0 5px;
+}
+
+.body_main {
+	margin-top: 3px;
+	height: 97%;
+	width: 97%;
+}
+
+.div_set_area {
+	margin-top: 4px;
+	border: solid 1px #c2d6f0;
+	padding-left: 15px;
+}
+
+.set_area_title_show {
+	height: 24px;
+	line-height: 24px;
+	padding-left: 20px;
+	font-weight: bold;
+	background-image: url(../../images/icons/show.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.set_area_title_hide {
+	height: 24px;
+	line-height: 24px;
+	padding-left: 20px;
+	font-weight: bold;
+	background-image: url(../../images/icons/hide.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.set_area_content {
+	line-height: 24px;
+	padding-left: 15px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #000;
+}
+
+.grid {
+	border-top: 1px solid #ededed;
+}
+
+.button {
+	background-image: url(../../images/btn-normal.gif);
+	height: 24px;
+	width: 71px;
+	border: 0px;
+}
+
+.text_remark {
+	color: #999999;
+}
+
+.spaYes {
+	color: #74C868;
+}
+
+.spaNo {
+	color: #ff0000;
+}
+
+/* --------------- ޸ Ext CSS -------------- */
+/* Ext 2.0 */
+.x-window-footer {
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+.x-tab-strip SPAN.x-tab-strip-text {
+	font-size: 12px;
+}
+
+.x-panel-header {
+	font-size: 12px;
+}
+
+.x-tree-node {
+	font-size: 12px;
+}
+
+.x-grid3-hd-row TD {
+	font-size: 12px;
+}
+
+.x-grid3-row TD {
+	font-size: 12px;
+	LINE-HEIGHT: 16px;
+}
+
+.x-tip .x-tip-bd {
+	font-size: 12px;
+}
+
+.x-tip h3 {
+	font-size: 12px;
+}
+
+.x-tip .x-tip-bd-inner {
+	font-size: 12px;
+}
+
+.x-panel-tl .x-panel-header {
+	FONT: normal 12px tahoma, arial, verdana, sans-serif;
+}
+
+.x-form-field {
+	FONT: 12px tahoma, arial, helvetica, sans-serif
+}
+
+.x-small-editor .x-form-field {
+	FONT: 12px tahoma, arial, helvetica, sans-serif
+}
+
+.x-combo-list-item {
+	FONT: 12px tahoma, arial, helvetica, sans-serif;
+}
+
+.x-menu-list-item {
+	FONT: 12px tahoma, arial, sans-serif;
+}
+
+.x-window-tl .x-window-header {
+	FONT: bold 12px tahoma, arial, verdana, sans-serif;
+}
+
+.x-layout-split-west .x-layout-mini {
+	BACKGROUND-IMAGE: url(../../images/mini-left.jpg);
+}
+
+.ext-ie .x-form-text {
+	margin-top: 1px;
+} /* the textField missing bottom line */
+.x-form-item {
+	FONT: 12px tahoma, arial, helvetica, sans-serif
+}
+
+.x-grid-group-hd DIV {
+	FONT: bold 12px tahoma, arial, helvetica, sans-serif;
+}
+
+.
+.x-btn-text-icon .x-btn-center .x-btn-text {ext-all .css (line 227)
+	background-position:0pt2px;
+	background-repeat: no-repeat;
+	padding: 3px 0pt 2px 18px;
+}
+
+.ext-gecko .x-btn button {ext-all .css (line 222) padding-left:0pt;
+	padding-right: 0pt;
+}
+
+.x-btn button {
+	font-size: 12px;
+}
+
+.row_red {
+	color: #FF4500;
+}
+
+.row_yellow {
+	color: #A38200;
+}
+
+.row_green {
+	color: #7CFC00;
+}
+
+.row_blue {
+	color: #79CDCD;
+}
+/* END */

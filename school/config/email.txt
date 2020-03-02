@@ -1,0 +1,20 @@
+<body style="margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">
+ <div style="border: 1px solid #C8C8CA; width: 650px; margin-top: 10px; margin-right: auto; margin-left: auto;" >
+ <div style="height: 79px; width: 618px; margin-top: 5px; margin-right: auto; margin-left: auto;"><img src="{logo}" /></div>
+ <div style="width: 618px; margin-top: 10px; margin-right: auto; margin-left: auto; font-size:12px; font-family:'宋体', '黑体', '微软雅黑'; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: none; border-right-style: none; border-bottom-style: dashed; border-left-style: none; border-top-color: #808080; border-right-color: #808080; border-bottom-color: #808080; border-left-color: #808080;">
+ <p style="margin-top:5px; margin-right: auto; margin-left: auto; line-height: 17px;"><strong>尊敬的{operatorname}，您好:</strong> <br>
+ 您在{workname}（{workurl}）点击了"忘记密码"按钮，故系统自动为您发送了这封邮件。您可以点击以下链接修改您的密码：<br>
+ <a style="color: #2A1FFF;" href="{passwordurl}">{passwordurl} </a>
+ </p>
+ <p style="margin-top: 5px; margin-right: auto; margin-left: auto; line-height: 17px;">此链接有效期为两个小时，请在两小时内点击链接进行修改。如果您不需要修改密码，或者您从未点击过"忘记密码"按钮，请忽略本邮件。 <br>
+     如有任何疑问，请联系<a style="color: #2A1FFF;" href="http://www.9client.com/">上海久科信息技术有限公司</a>，可发送邮件至：elico.he@9client.com。
+ </p>
+ <br>
+ <p style="margin-top: 5px; margin-right: auto; margin-left: auto; line-height: 17px;">如果您想了解久科信息最新产品，欢迎进入"<a style="color: #2A1FFF;" href="http://www.9client.com/">久科官网</a>"<br>
+ </p>
+ <br>
+  <div style="height: 79px; width: 618px; margin-top: 5px; margin-right: auto; margin-left: auto;"><img src="{button}" /></div>
+ </div>
+ </div>
+ </div>
+</body>

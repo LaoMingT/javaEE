@@ -1,0 +1,22 @@
+.layout-header-bg {
+	height: 42px;
+	border-top-width: 2px;
+	border-bottom: none;
+}
+
+.layout-header-bg SPAN {
+	line-height: 33px;
+	margin-left: 24px;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: "宋体";
+}
+
+.layout-query-bg {
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+.layout-query-bg TABLE TBODY TR {
+	height: 27px;
+}

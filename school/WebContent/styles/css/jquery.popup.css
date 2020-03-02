@@ -1,0 +1,101 @@
+/**
+ *
+ * jQuery plugin: Popup 1.0
+ *
+ * Copyright (c) 2008 Yves Bresson
+ * www.ybresson.com
+ *
+ * Default styles
+ *
+ */
+#popup {
+	display: none;
+	position: fixed;
+	width: 300px;
+	_position: absolute; /* hack for internet explorer 6 */
+	border: #90C8EB 1px solid;
+	z-index: 200;
+	padding: 2px; /* same as rounding */
+	background: #C8E7FC url('../images/Column_title_bg.gif') repeat-x;
+}
+
+#popup_bg {
+	display: none;
+	position: fixed;
+	_position: absolute; /* hack for internet explorer 6 */
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #aaaaaa;
+	border: 1px solid #cecece;
+	z-index: 10;
+}
+
+#popup_title {
+	font-weight: bold;
+	color: #333333;
+	line-height: 24px;
+	padding: 0 0 0 5px;
+}
+
+#popup_close {
+	width: 14px;
+	height: 14px;
+	background: url('../images/close-off.png') no-repeat;
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+}
+
+#popup_close:hover {
+	background: url('../images/close.png') no-repeat;
+}
+
+#popup_message {
+	padding: 0px;
+	background: #ffffff;
+	line-height: 22px;
+	/*min-height: 120px;*/
+}
+
+#popup_div0 {
+	background: url('../images/icon_succeed.png') no-repeat 3px 3px;
+	padding: 3px 3px 21px 35px;
+}
+
+#popup_div1 {
+	background: url('../images/icon_info.png') no-repeat 3px 3px;
+	padding: 3px 3px 21px 35px;
+}
+
+#popup_div2 {
+	background: url('../images/icon_error.png') no-repeat 3px 3px;
+	padding: 3px 3px 21px 35px;
+}
+
+#popup_div3 {
+	background: url('../images/icon_confirm.png') no-repeat 3px 3px;
+	padding: 3px 3px 21px 35px;
+}
+
+#popup_div4 {
+	background: url('../images/busy.gif') no-repeat 3px 3px;
+	padding: 3px 3px 21px 35px;
+}
+
+button0 {
+	height: 26px;
+	width: 60px;
+}
+
+#popup_div {
+	padding: 5px 0px 5px 35px;
+	background: #fafafa;
+	/*min-height: 120px;*/
+}
+
+#popup_button0,#popup_button1 {
+	height: 26px;
+	width: 60px;
+}

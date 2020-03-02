@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+html
+,
+body
+,
+p
+,
+form
+,
+img
+,
+{
+margin
+
+
+:
+
+ 
+
+0;
+padding
+
+
+:
+
+ 
+
+0;
+border
+
+
+:
+
+ 
+
+0;
+}
+select,img {
+	vertical-align: middle;
+}
+
+body {
+	font-size: 14px;
+	font-family: "微软雅黑", "宋体", "黑体", Georgia, "Times New Roman", Times,
+		serif;
+}
+
+* {
+	line-height: 1.4em;
+}
+
+p {
+	letter-spacing: 0.12em;
+}
+
+.main {
+	height: 757px;
+	width: 957px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.logotop {
+	height: 79px;
+	width: 957px;
+	float: left;
+	background: url(../../images/login/logotop.gif) no-repeat;
+}
+
+.logoname {
+	height: 468px;
+	width: 429px;
+	float: left;
+	background: url(../../images/login/logoname.gif) no-repeat;
+}
+
+.logoinputbutton {
+	height: 28px;
+	width: 43px;
+}
+
+.logoinput {
+	border: 1px solid #D8D8DA;
+	background-color: #FAFAFA;
+	height: 30px;
+	width: 285px;
+	color: #A0A0A4;
+	font-size: 14px;
+	font-family: "微软雅黑", "宋体", "黑体", Georgia, "Times New Roman", Times,
+		serif;
+	line-height: 30px;
+}
+
+.logonameinput {
+	margin-top: 85px;
+	list-style-type: none;
+	display: block;
+	padding: 0px;
+	color: #A0A0A4;
+	margin-left: 72px;
+}
+
+.logonameinput li {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.logonamebuttom {
+	height: 24px;
+	width: 37px;
+}
+
+.logolinkcr {
+	height: 468px;
+	width: 528px;
+	float: left;
+	background: url(../../images/login/logolinkcr.jpg) no-repeat;
+}
+
+.logolinkcm {
+	height: 468px;
+	width: 528px;
+	float: left;
+	background: url(../../images/login/logolinkcm.gif) no-repeat;
+}
+
+.linkul {
+	margin-top: 300px;
+	margin-left: 31px;
+	list-style-type: none;
+	display: block;
+	padding: 0px;
+}
+
+.linkul li {
+	list-style-type: none;
+	display: block;
+	float: left;
+	height: 85px;
+	width: 117px;
+	word-wrap: break-word;
+	margin-right: 36px;
+	color: #808080;
+	font-size: 12px;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+.linkul li a {
+	color: #D40000;
+	text-decoration: none;
+}
+
+.linkul li a:hover {
+	color: #2A1FFF;
+}
+
+.logonote {
+	height: 113px;
+	width: 957px;
+	float: left;
+	background: url(../../images/login/logonote.gif) no-repeat;
+}
+
+.noteul {
+	margin-top: 23px;
+	margin-left: 78px;
+	list-style-type: none;
+	padding: 0px;
+	float: left;
+}
+
+.noteul li {
+	list-style-type: none;
+	display: block;
+	width: 376px;
+	word-wrap: break-word;
+	color: #808080;
+	font-size: 12px;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+.noteul li a {
+	color: #2A1FFF;
+	text-decoration: underline;
+}
+
+.noteul li.titleli {
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #C8C8C8;
+}
+
+.noteul li.noteli {
+	margin-top: 5px;
+}
+
+.noteul01 {
+	margin-top: 23px;
+	margin-left: 32px;
+	list-style-type: none;
+	padding: 0px;
+	float: left;
+}
+
+.noteul01 li {
+	list-style-type: none;
+	display: block;
+	width: 376px;
+	word-wrap: break-word;
+	color: #808080;
+	font-size: 12px;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+.noteul01 li a {
+	color: #2A1FFF;
+	text-decoration: underline;
+}
+
+.noteul01 li.titleli {
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #C8C8C8;
+}
+
+.noteul01 li.noteli {
+	margin-top: 5px;
+}
+
+.logobutton {
+	height: 97px;
+	width: 957px;
+	float: left;
+	background: url(../../images/login/logobutton.gif) no-repeat;
+}
+
+.logobuttonkey {
+	height: 40px;
+	width: 957px;
+	float: left;
+	background: url(../../images/login/logobuttonkey.jpg) no-repeat;
+}
+
+.logonameinput li a {
+	font-size: 12px;
+	color: #2A00FF;
+	text-decoration: none;
+}
+
+.logonameinput li a:hover {
+	color: #D40000;
+	text-decoration: underline;
+}
+
+.forgetkey {
+	height: 367px;
+	width: 957px;
+	background: url(../../images/login/forgetkey.jpg) no-repeat;
+	float: left;
+	padding-left: 70px;
+	padding-top: 50px;
+}
+
+.forgetkeyul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.forgetkeyul li {
+	font-size: 12px;
+	letter-spacing: 0.1em;
+}
+
+.forgetkeyname {
+	font-size: 16px;
+}
+
+.forgetkeyname a {
+	color: #2A3FFF;
+	text-decoration: underline;
+}
+
+h1 {
+	margin-top: 66px;
+}
+
+.forgetkeyname span {
+	color: #D40000;
+}
+
+.keyok {
+	height: 367px;
+	width: 957px;
+	background: url(../../images/login/forgetkey.jpg) no-repeat;
+	float: left;
+	padding-left: 140px;
+}
+
+.keyok p {
+	font-size: 16px;
+	margin-top: 10px;
+	display: block;
+}
+
+p.topp {
+	margin-top: 66px;
+}
+
+.noteul {
+	margin-top: 23px;
+	margin-left: 39px;
+	list-style-type: none;
+	padding: 0px;
+}
+
+#forgetkeyp01 {
+	margin-top: 25px;
+}
+
+#forgetkeyp02 {
+	margin-top: 10px;
+}

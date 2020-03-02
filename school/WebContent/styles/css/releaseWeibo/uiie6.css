@@ -1,0 +1,28 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.face {
+	padding-bottom: 8px;
+}
+
+.expression {
+	margin-top: 7px;
+	margin-left: 4px;
+}
+
+#tagContent {
+	margin-left: 4px;
+	margin-bottom: 8px;
+}
+
+.tagContent {
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+
+.normalin {
+	height: 96px;
+	width: 406px;
+	float: left;
+	margin-top: 3px;
+	margin-left: 2px;
+}

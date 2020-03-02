@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<![CDATA[
+	豆芽科技工作室
+	Copyright (C): 2012
+	
+	文件名称： 
+	appContext-job.xml
+	
+	文件描述: 
+	系统配置文件任务计划job配置。 
+	
+	Notes:
+	修改历史(作者/日期/改动描述): 
+	王彬/2012.04.10/初始化。
+]]>-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-2.0.4.xsd">
+	<!-- ===================================================== -->
+	<!-- JOB配置信息 -->
+	<!-- ===================================================== -->
+
+
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<!-- <ref bean="pluginJobTrigger"/>  -->
+			</list>
+		</property>
+	</bean>
+
+	<bean id="pluginJobTrigger" scope="singleton"
+		class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<property name="jobDetail" ref="pluginJob" />
+		<property name="startDelay" value="1000" /><!--系统启动出发 -->
+		<property name="repeatInterval" value="1000" /><!--多长时间执行一次 -->
+	</bean>
+	<bean id="pluginJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+		<property name="jobClass" value="com.douya.job.PluginJob" />
+		<property name="jobDataAsMap">
+			<map>
+			</map>
+		</property>
+	</bean>
+
+</beans>

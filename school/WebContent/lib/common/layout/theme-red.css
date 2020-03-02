@@ -1,0 +1,13 @@
+.layout-header-bg {
+	border: 1px #e45757 solid;
+	background: url(./images/header-bg-red.gif) repeat-x center #e45757;
+}
+
+.layout-header-bg SPAN {
+	color: #d16b6f;
+}
+
+.layout-query-bg {
+	background: url(./images/query-bg-red.png) no-repeat left bottom;
+	background-color: #fff;
+}

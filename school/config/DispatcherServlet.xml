@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <![CDATA[ 豆芽科技 Copyright (C): 2012 文件名称： DispatcherServlet.xml 
+	文件描述: Notes: 修改历史(作者/日期/改动描述): 王彬/2012.04.10/初始化。 ]]> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<map>
+				<!-- 公用的处理页面 -->
+				<entry key="/home.do" value="homeController" />
+				<entry key="/login.do" value="loginController" />
+				<entry key="/common.do" value="commonController" />
+
+                
+                
+				<!-- 业务部分 -->
+				<!--- 报表部分  -->
+				<entry key="/reportMenuClick.do" value="reportMenuClickController" />
+				<entry key="/reportFans.do" value="reportFansController" />
+                <!--- 媒体库  -->
+                <entry key="/wxImage.do" value="wxImageController" />
+                <entry key="/wxVideo.do" value="wxVideoController" />
+                <entry key="/wxNews.do" value="wxNewsController" />
+                <entry key="/wxChar.do" value="wxCharController" />
+                <!--客户管理模块 -->
+                <entry key="/fansMessage.do" value="fansMessageController" />
+                <entry key="/fansBehavior.do" value="fansBehaviorController" />
+                <entry key="/fansBehaviorMenu.do" value="fansBehaviorMenuController" />
+                <entry key="/fansBehaviorWebpage.do" value="fansBehaviorWebpageController" />
+                <entry key="/fansCancel.do" value="fansCancelController" />
+                <entry key="/fansChatRecord.do" value="fansChatRecordController" />
+
+                <!--- 管理中心  -->
+                <entry key="/wxAccount.do" value="wxAccountController" />
+                <entry key="/company.do" value="companyController" />
+                <entry key="/operator.do" value="operatorController" />
+                <entry key="/authority.do" value="authorityController" />
+
+
+				<entry key="/userMessage.do" value="userMessageController" />
+
+			</map>
+
+
+		</property>
+		<!-- 拦截器配置，注意引用顺序。 -->
+		<property name="interceptors">
+			<list>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="homeController" class="com.douya.controller.HomeController"></bean>
+
+	<bean id="loginController" class="com.douya.controller.Login"></bean>
+
+	<bean id="commonController" class="com.douya.controller.CommonController"></bean>
+
+
+	<!-- 业务部分 -->
+	<!--- 报表部分  -->
+	<bean id="reportMenuClickController" class="com.douya.controller.report.ReportMenuClickController"></bean>
+	<bean id="reportFansController" class="com.douya.controller.report.ReportFansController"></bean>
+
+	<!--- 媒体库  -->
+	<bean id="wxImageController" class="com.douya.controller.wxMedia.WxImageController"></bean>
+	<bean id="wxVideoController" class="com.douya.controller.wxMedia.WxVideoController"></bean>
+	<bean id="wxNewsController" class="com.douya.controller.wxMedia.WxNewsController"></bean>
+	<bean id="wxCharController" class="com.douya.controller.wxMedia.WxCharController"></bean>
+    <!-- 客户管理模块 -->
+	<bean id="fansMessageController" class="com.douya.controller.fansMsg.FansMessageController"></bean>
+	<bean id="fansBehaviorController" class="com.douya.controller.fansMsg.FansBehaviorController"></bean>
+    <bean id="fansBehaviorMenuController" class="com.douya.controller.fansMsg.FansBehaviorMenuController"></bean>
+    <bean id="fansBehaviorWebpageController" class="com.douya.controller.fansMsg.FansBehaviorWebpageController"></bean>
+    <bean id="fansCancelController" class="com.douya.controller.fansMsg.FansCancelController"></bean>
+    <bean id="fansChatRecordController" class="com.douya.controller.fansMsg.FansChatRecordController"></bean>
+
+    <!--- 管理中心  -->
+	<bean id="wxAccountController" class="com.douya.controller.system.WxAccountController"></bean>
+	<bean id="companyController" class="com.douya.controller.system.CompanyController"></bean>
+	<bean id="operatorController" class="com.douya.controller.system.OperatorController"></bean>
+	<bean id="authorityController" class="com.douya.controller.system.AuthorityController"></bean>
+
+
+
+
+	<bean id="userMessageController" class="com.douya.controller.userMsg.UserMessageController"></bean>
+
+
+
+	<!-- 页面选择 -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- set the max upload size100MB -->
+		<property name="defaultEncoding" value="UTF-8" />
+		<property name="maxUploadSize">
+			<value>5857600</value>
+		</property>
+		<property name="maxInMemorySize">
+			<value>4096</value>
+		</property>
+	</bean>
+
+</beans>
