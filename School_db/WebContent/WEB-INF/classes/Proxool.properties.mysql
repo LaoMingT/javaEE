@@ -1,0 +1,24 @@
+ jdbc-1.proxool.alias=uficc
+ jdbc-1.proxool.driver-url=jdbc:mysql://192.168.100.214:3306/icc28_main
+ jdbc-1.proxool.driver-class=org.gjt.mm.mysql.Driver
+ jdbc-1.user=ecccsdb
+ jdbc-1.password=Nwl6z1RSo
+ jdbc-1.proxool.house-keeping-sleep-time=40000
+ jdbc-1.proxool.house-keeping-test-sql=select CURRENT_DATE 
+ jdbc-1.proxool.maximum-connection-count=20
+ jdbc-1.proxool.minimum-connection-count=1
+ jdbc-1.proxool.maximum-connection-lifetime=18000000
+ jdbc-1.proxool.simultaneous-build-throttle=5
+ jdbc-1.proxool.recently-started-threshold=40000
+ jdbc-1.proxool.overload-without-refusal-lifetime=50000
+ jdbc-1.proxool.maximum-active-time=600000
+ jdbc-1.proxool.verbose=true
+ jdbc-1.proxool.trace=true
+ jdbc-1.proxool.fatal-sql-exception=Fatal error
+ jdbc-1.proxool.prototype-count=2
+ 
+#hibernate settings
+hibernate.show_sql=true
+hibernate.format_sql=true
+hibernate.ehcache_config_file=/ehcache/ehcache-hibernate-local.xml
+hibernate.dialect=org.hibernate.dialect.MySQLDialect　 

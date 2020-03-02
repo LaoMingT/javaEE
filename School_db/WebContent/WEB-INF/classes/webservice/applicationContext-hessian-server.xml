@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"
+	default-lazy-init="true">
+
+	<description>Hessian服务端配置</description>
+
+	<!-- RemoteService的Hessian Exporter -->
+	
+	<!-- 业务管理 -->
+	<bean name="remoteBusinesServiceExporter" class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="service" ref="mccRemoteBusinesService" />
+		<property name="serviceInterface" value="com.douya.mcc.service.MccRemoteBusinesService" />
+	</bean>
+	<!-- 微博互动 -->
+	
+	<!-- 知识管理 -->
+
+	<!-- 管理中心 -->
+
+	<!-- 微博看板 -->
+	
+	<!-- 用户管理 -->
+
+	<!-- 活动管理 -->
+
+	<!-- 业务应用 -->
+
+	<!-- 业务预警 -->
+
+	<!-- 回复记录 -->
+
+	
+	<!-- 报表 -->
+	
+	<!-- 缓存 -->
+	
+	
+
+	<!-- UserWebService的实现Bean定义 -->
+	
+    
+	<!-- 业务管理 -->
+	<bean id="mccRemoteBusinesService" class="com.douya.mcc.service.impl.MccRemoteBusinesServiceImpl" />
+	<!-- 微博互动 -->
+	<!-- 缓存 -->
+
+	<!-- dozer DTO复制工具类定义 -->
+	<bean id="dozer" class="org.dozer.DozerBeanMapper"/>
+</beans>
